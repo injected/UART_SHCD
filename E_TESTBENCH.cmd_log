@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "C:/Users/Thomes/Desktop/UART VHDL/E_TESTBENCH.xst" -ofn "C:/Users/Thomes/Desktop/UART VHDL/E_TESTBENCH.syr" 
+vhdtdtfi -lib work DECISION.vhd -lib work TRANSMITT.vhd -lib work RECEIVCE.vhd -lib work GENERATE_PARITYBIT.vhd -lib work BUFFER.vhd -lib work TX.vhd -lib work RX.vhd -lib work BAUD_GENERATOR.vhd -lib work UART.vhd -lib work ARMADEUS_DUMMY.vhd -lib work E_MAIN.vhd -lib work TESTBENCH.vhd -prj UART -o E_TESTBENCH.spl -module E_TESTBENCH -template /opt/Xilinx/12.1/ISE_DS/ISE/data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e E_TESTBENCH.spl {/home/g12a/UART/UART VHDL/E_TESTBENCH.sym} 

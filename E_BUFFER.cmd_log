@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/Thomes/Desktop/UART/UART VHDL/E_BUFFER.xst" -ofn "C:/Users/Thomes/Desktop/UART/UART VHDL/E_BUFFER.syr" 

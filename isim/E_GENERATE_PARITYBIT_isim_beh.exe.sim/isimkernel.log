@@ -1,0 +1,10 @@
+Command line:
+   E_GENERATE_PARITYBIT_isim_beh.exe
+     -simmode  gui
+     -simrunnum  1
+     -socket  51429
+
+Sun Dec 05 17:00:12 2010
+
+
+ Elaboration Time: 0.0468 sec

@@ -1,0 +1,18 @@
+Running: C:\Xilinx\12.3\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/Thomes/Desktop/UART/UART VHDL/E_GENERATE_PARITYBIT_isim_beh.exe -prj C:/Users/Thomes/Desktop/UART/UART VHDL/E_GENERATE_PARITYBIT_beh.prj work.E_GENERATE_PARITYBIT 
+ISim M.70d (signature 0x36e8438f)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/Thomes/Desktop/UART/UART VHDL/GENERATE_PARITYBIT.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 92928 KB
+Fuse CPU Usage: 155 ms
+Using precompiled package standard from library std
+Using precompiled package std_logic_1164 from library ieee
+Compiling architecture a_generate_paritybit of entity e_generate_paritybit
+Time Resolution for simulation is 1ps.
+Compiled 3 VHDL Units
+Built simulation executable C:/Users/Thomes/Desktop/UART/UART VHDL/E_GENERATE_PARITYBIT_isim_beh.exe
+Fuse Memory Usage: 99568 KB
+Fuse CPU Usage: 186 ms

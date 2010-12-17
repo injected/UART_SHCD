@@ -1,0 +1,93 @@
+ISim log file
+Running: C:\Users\Thomes\Desktop\UART\UART VHDL\E_GENERATE_PARITYBIT_isim_beh.exe -gui -tclbatch isim.cmd -wdb C:/Users/Thomes/Desktop/UART/UART VHDL/E_GENERATE_PARITYBIT_isim_beh.wdb 
+INFO: There is another simulation running in the same directory. Using database file name isim1.wdb.
+ISim M.70d (signature 0x36e8438f)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+The simulator has terminated in an unexpected manner.  Please review the ISim log (isim.log) for details.
+# isim force add /e_generate_paritybit/e_generate_paritybit_data 1110000 -radix bin
+# isim force add /e_generate_paritybit/e_generate_paritybit_reset 0 -radix bin
+# isim force add /e_generate_paritybit/e_generate_paritybit_clock_in 0 -radix bin -value 1 -radix bin -time 50 ps -repeat 100 ps
+# isim force add /e_generate_paritybit/e_generate_paritybit_clock_in 0 -radix bin -value 1 -radix bin -time 50 ps -repeat 100 ps
+# isim force add /e_generate_paritybit/e_generate_paritybit_data 11100000 -radix bin
+# isim force add /e_generate_paritybit/e_generate_paritybit_enable 1 -radix bin
+# run 1.00us
+# isim force add /e_generate_paritybit/e_generate_paritybit_data 11110000 -radix bin
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# isim force add /e_generate_paritybit/e_generate_paritybit_data 10000000 -radix bin
+# isim force add /e_generate_paritybit/e_generate_paritybit_data 10000000 -radix bin
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# isim force add /e_generate_paritybit/e_generate_paritybit_enable 0 -radix bin -value 1 -radix bin -time 50 ps -repeat 100 ps
+# isim force add /e_generate_paritybit/e_generate_paritybit_enable 0 -radix bin -value 1 -radix bin -time 50 ps -repeat 100 ps
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# isim force add /e_generate_paritybit/e_generate_paritybit_enable 1 -radix bin
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# isim force add /e_generate_paritybit/e_generate_paritybit_data 11000000 -radix bin
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# isim force add /e_generate_paritybit/e_generate_paritybit_enable 0 -radix bin
+# run 1.00us
+# run 1.00us
+# run 1.00us

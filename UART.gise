@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="UART.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="../../ToDo und Dokumente/Practice_No_5_Win/Task4_Animation/xst"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="E_BUFFER.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="E_BUFFER.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="E_BUFFER.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="E_BUFFER.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="E_BUFFER.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="E_BUFFER.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="E_BUFFER.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="E_BUFFER.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="E_BUFFER_summary.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="E_BUFFER_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="E_BUFFER_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="E_DECISION.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="E_DECISION.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="E_DECISION.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="E_DECISION.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="E_DECISION.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="E_DECISION.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="E_DECISION.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="E_DECISION.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="E_DECISION_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="E_DECISION_summary.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="E_DECISION_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="E_DECISION_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="E_GENERATE_PARITYBIT.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="E_GENERATE_PARITYBIT.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="E_GENERATE_PARITYBIT.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="E_GENERATE_PARITYBIT.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="E_GENERATE_PARITYBIT.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="E_GENERATE_PARITYBIT.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="E_GENERATE_PARITYBIT.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="E_GENERATE_PARITYBIT.xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="E_GENERATE_PARITYBIT_beh.prj"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="E_GENERATE_PARITYBIT_envsettings.html"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="E_GENERATE_PARITYBIT_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="E_GENERATE_PARITYBIT_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="E_GENERATE_PARITYBIT_summary.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="E_GENERATE_PARITYBIT_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="E_GENERATE_PARITYBIT_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="E_RECEIVE.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="E_RECEIVE.ngr"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="E_RECEIVE_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="E_RECEIVE_summary.html"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="E_TESTBENCH.spl"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="E_TESTBENCH.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="E_TRANSMITT.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="E_TRANSMITT.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="E_TRANSMITT.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="E_TRANSMITT.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="E_TRANSMITT.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="E_TRANSMITT.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="E_TRANSMITT_envsettings.html"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="E_TRANSMITT_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="E_TRANSMITT_summary.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="E_TRANSMITT_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="E_TRANSMITT_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="E_TX.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="E_TX.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="E_TX.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="E_TX.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="E_TX.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="E_TX.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="E_TX_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="E_TX_summary.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="E_TX_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="E_TX_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1291563899" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1291563899">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1291563899" xil_pn:in_ck="-9023189369992227536" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1291563899">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="ARMADEUS_DUMMY.vhd"/>
+      <outfile xil_pn:name="BAUD_GENERATOR.vhd"/>
+      <outfile xil_pn:name="BUFFER.vhd"/>
+      <outfile xil_pn:name="DECISION.vhd"/>
+      <outfile xil_pn:name="E_MAIN.vhd"/>
+      <outfile xil_pn:name="GENERATE_PARITYBIT.vhd"/>
+      <outfile xil_pn:name="RECEIVCE.vhd"/>
+      <outfile xil_pn:name="RX.vhd"/>
+      <outfile xil_pn:name="TESTBENCH.vhd"/>
+      <outfile xil_pn:name="TRANSMITT.vhd"/>
+      <outfile xil_pn:name="TX.vhd"/>
+      <outfile xil_pn:name="UART.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1291564555" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="5649604017989767790" xil_pn:start_ts="1291564555">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1291564555" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="2803535821830483952" xil_pn:start_ts="1291564555">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1291563899" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-8034187396654541954" xil_pn:start_ts="1291563899">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+    </transform>
+    <transform xil_pn:end_ts="1291563899" xil_pn:in_ck="-9023189369992227536" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1291563899">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="ARMADEUS_DUMMY.vhd"/>
+      <outfile xil_pn:name="BAUD_GENERATOR.vhd"/>
+      <outfile xil_pn:name="BUFFER.vhd"/>
+      <outfile xil_pn:name="DECISION.vhd"/>
+      <outfile xil_pn:name="E_MAIN.vhd"/>
+      <outfile xil_pn:name="GENERATE_PARITYBIT.vhd"/>
+      <outfile xil_pn:name="RECEIVCE.vhd"/>
+      <outfile xil_pn:name="RX.vhd"/>
+      <outfile xil_pn:name="TESTBENCH.vhd"/>
+      <outfile xil_pn:name="TRANSMITT.vhd"/>
+      <outfile xil_pn:name="TX.vhd"/>
+      <outfile xil_pn:name="UART.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1291564556" xil_pn:in_ck="-9023189369992227536" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-2910903989507379988" xil_pn:start_ts="1291564555">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="E_GENERATE_PARITYBIT_beh.prj"/>
+      <outfile xil_pn:name="E_GENERATE_PARITYBIT_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1291564811" xil_pn:in_ck="-6619383987487443474" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="5137948155289080217" xil_pn:start_ts="1291564810">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="E_GENERATE_PARITYBIT_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+    </transform>
+    <transform xil_pn:end_ts="1291921923" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1291921923">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1292584862" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="5536349989171676088" xil_pn:start_ts="1292584862">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1292584862" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-8034187396654541954" xil_pn:start_ts="1292584862">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1292536384" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1292536384">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1292584862" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="6651379191462350838" xil_pn:start_ts="1292584862">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1292536384" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-3893270297158069842" xil_pn:start_ts="1292536384">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1292584862" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-3227673217760252152" xil_pn:start_ts="1292584862">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1292584868" xil_pn:in_ck="-9023189369992227536" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-8285085873833029143" xil_pn:start_ts="1292584862">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="../../ToDo und Dokumente/Practice_No_5_Win/Task4_Animation/xst"/>
+      <outfile xil_pn:name="E_BUFFER.ngr"/>
+      <outfile xil_pn:name="E_DECISION.ngr"/>
+      <outfile xil_pn:name="E_GENERATE_PARITYBIT.ngr"/>
+      <outfile xil_pn:name="E_RECEIVE.ngr"/>
+      <outfile xil_pn:name="E_TRANSMITT.cmd_log"/>
+      <outfile xil_pn:name="E_TRANSMITT.lso"/>
+      <outfile xil_pn:name="E_TRANSMITT.prj"/>
+      <outfile xil_pn:name="E_TRANSMITT.syr"/>
+      <outfile xil_pn:name="E_TRANSMITT.xst"/>
+      <outfile xil_pn:name="E_TRANSMITT_envsettings.html"/>
+      <outfile xil_pn:name="E_TRANSMITT_summary.html"/>
+      <outfile xil_pn:name="E_TRANSMITT_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+  </transforms>
+
+</generated_project>
