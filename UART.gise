@@ -62,15 +62,16 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="E_GENERATE_PARITYBIT_vhdl.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="E_GENERATE_PARITYBIT_xst.xrpt"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="E_RECEIVE.cmd_log"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="E_RECEIVE.ngr"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="E_RECEIVE_envsettings.html"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="E_RECEIVE_summary.html"/>
     <file xil_pn:fileType="FILE_SPL" xil_pn:name="E_TESTBENCH.spl"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="E_TESTBENCH.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="E_TRANSMITT.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="E_TRANSMITT.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="E_TRANSMITT.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="E_TRANSMITT.ngr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="E_TRANSMITT.prj"/>
-    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="E_TRANSMITT.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="E_TRANSMITT.stx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="E_TRANSMITT.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="E_TRANSMITT.xst"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="E_TRANSMITT_envsettings.html"/>
@@ -212,18 +213,19 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1292584868" xil_pn:in_ck="-9023189369992227536" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-8285085873833029143" xil_pn:start_ts="1292584862">
-      <status xil_pn:value="FailedRun"/>
-      <status xil_pn:value="WarningsGenerated"/>
+    <transform xil_pn:end_ts="1292586397" xil_pn:in_ck="-9023189369992227536" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-8285085873833029143" xil_pn:start_ts="1292586388">
+      <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="../../ToDo und Dokumente/Practice_No_5_Win/Task4_Animation/xst"/>
       <outfile xil_pn:name="E_BUFFER.ngr"/>
       <outfile xil_pn:name="E_DECISION.ngr"/>
       <outfile xil_pn:name="E_GENERATE_PARITYBIT.ngr"/>
-      <outfile xil_pn:name="E_RECEIVE.ngr"/>
       <outfile xil_pn:name="E_TRANSMITT.cmd_log"/>
       <outfile xil_pn:name="E_TRANSMITT.lso"/>
+      <outfile xil_pn:name="E_TRANSMITT.ngc"/>
+      <outfile xil_pn:name="E_TRANSMITT.ngr"/>
       <outfile xil_pn:name="E_TRANSMITT.prj"/>
+      <outfile xil_pn:name="E_TRANSMITT.stx"/>
       <outfile xil_pn:name="E_TRANSMITT.syr"/>
       <outfile xil_pn:name="E_TRANSMITT.xst"/>
       <outfile xil_pn:name="E_TRANSMITT_envsettings.html"/>
