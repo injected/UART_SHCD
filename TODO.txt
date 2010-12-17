@@ -1,0 +1,14 @@
+kalle
+	Armadeus C-Prog
+--------
+benny
+	Spec schreiben
+-------
+ben
+	Spec schreiben
+-------
+thomas
+	komplettierung VHDL Code
+	Doku Entity
+	Aufspielen auf Plattform und Test
+------
