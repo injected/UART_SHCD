@@ -55,12 +55,13 @@ begin
 
 	P1 : process (
 		E_TRANSMITT_Clock_In,
-		E_TRANSMITT_Reset
+		E_TRANSMITT_Reset,
+		E_TRANSMITT_Enable
 	)
 	begin
 		
 		IF(E_TRANSMITT_Reset = '0')
-		THEN
+			THEN
 			Serial_Out <= '1';
 			Current_State <= END_STATE;
 		ELSIF (E_TRANSMITT_Clock_In = '1' AND E_TRANSMITT_Clock_In'EVENT)
@@ -116,7 +117,6 @@ begin
 				END IF; -- reset + clock
 			END IF; -- enable
 			Last_Enable_Value <= E_TRANSMITT_Enable;
-		END IF;
 
 	end process;
 
