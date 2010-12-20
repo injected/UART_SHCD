@@ -14,43 +14,22 @@
 <td><b>par</b></td>
 </tr>
 <tr>
-<td>PATHEXT</td>
-<td>.COM;<br>.EXE;<br>.BAT;<br>.CMD;<br>.VBS;<br>.VBE;<br>.JS;<br>.JSE;<br>.WSF;<br>.WSH;<br>.MSC</td>
+<td>LD_LIBRARY_PATH</td>
+<td>/opt/Xilinx/12.1/ISE_DS/ISE/lib/lin64</td>
 <td><font color=gray>&lt;&nbsp;data not available&nbsp;&gt;</font></td>
 <td><font color=gray>&lt;&nbsp;data not available&nbsp;&gt;</font></td>
 <td><font color=gray>&lt;&nbsp;data not available&nbsp;&gt;</font></td>
 </tr>
 <tr>
-<td>Path</td>
-<td>C:\Xilinx\12.3\ISE_DS\ISE\\lib\nt;<br>C:\Xilinx\12.3\ISE_DS\ISE\\bin\nt;<br>C:\Xilinx\12.3\ISE_DS\PlanAhead\bin;<br>C:\Xilinx\12.3\ISE_DS\ISE\bin\nt;<br>C:\Xilinx\12.3\ISE_DS\ISE\lib\nt;<br>C:\Xilinx\12.3\ISE_DS\EDK\bin\nt;<br>C:\Xilinx\12.3\ISE_DS\EDK\lib\nt;<br>C:\Xilinx\12.3\ISE_DS\common\bin\nt;<br>C:\Xilinx\12.3\ISE_DS\common\lib\nt;<br>C:\WinAVR-20100110\bin;<br>C:\WinAVR-20100110\utils\bin;<br>C:\Windows\system32;<br>C:\Windows;<br>C:\Windows\System32\Wbem;<br>C:\Program Files\ATI Technologies\ATI.ACE\Core-Static;<br>C:\Program Files\Microsoft SQL Server\90\Tools\binn\;<br>C:\Program Files\Common Files\Teleca Shared;<br>C:\Program Files\TortoiseSVN\bin;<br>C:\Program Files\Flash Magic;<br>C:\Windows\System32\WindowsPowerShell\v1.0\;<br>C:\Modeltech_pe_edu_6.6d\win32pe_edu</td>
+<td>PATH</td>
+<td>/opt/Xilinx/12.1/ISE_DS/ISE/bin/lin64:<br>/usr/kerberos/sbin:<br>/usr/kerberos/bin:<br>/usr/local/bin:<br>/usr/bin:<br>/bin:<br>/usr/local/sbin:<br>/usr/sbin:<br>/sbin:<br>/home/g01a/bin:<br>/opt/modeltech/bin</td>
 <td><font color=gray>&lt;&nbsp;data not available&nbsp;&gt;</font></td>
 <td><font color=gray>&lt;&nbsp;data not available&nbsp;&gt;</font></td>
 <td><font color=gray>&lt;&nbsp;data not available&nbsp;&gt;</font></td>
 </tr>
 <tr>
 <td>XILINX</td>
-<td>C:\Xilinx\12.3\ISE_DS\ISE\</td>
-<td><font color=gray>&lt;&nbsp;data not available&nbsp;&gt;</font></td>
-<td><font color=gray>&lt;&nbsp;data not available&nbsp;&gt;</font></td>
-<td><font color=gray>&lt;&nbsp;data not available&nbsp;&gt;</font></td>
-</tr>
-<tr>
-<td>XILINX_DSP</td>
-<td>C:\Xilinx\12.3\ISE_DS\ISE</td>
-<td><font color=gray>&lt;&nbsp;data not available&nbsp;&gt;</font></td>
-<td><font color=gray>&lt;&nbsp;data not available&nbsp;&gt;</font></td>
-<td><font color=gray>&lt;&nbsp;data not available&nbsp;&gt;</font></td>
-</tr>
-<tr>
-<td>XILINX_EDK</td>
-<td>C:\Xilinx\12.3\ISE_DS\EDK</td>
-<td><font color=gray>&lt;&nbsp;data not available&nbsp;&gt;</font></td>
-<td><font color=gray>&lt;&nbsp;data not available&nbsp;&gt;</font></td>
-<td><font color=gray>&lt;&nbsp;data not available&nbsp;&gt;</font></td>
-</tr>
-<tr>
-<td>XILINX_PLANAHEAD</td>
-<td>C:\Xilinx\12.3\ISE_DS\PlanAhead</td>
+<td>/opt/Xilinx/12.1/ISE_DS/ISE</td>
 <td><font color=gray>&lt;&nbsp;data not available&nbsp;&gt;</font></td>
 <td><font color=gray>&lt;&nbsp;data not available&nbsp;&gt;</font></td>
 <td><font color=gray>&lt;&nbsp;data not available&nbsp;&gt;</font></td>
@@ -107,7 +86,7 @@
 <td>-opt_mode</td>
 <td>Optimization Goal</td>
 <td>Speed</td>
-<td>Speed</td>
+<td>SPEED</td>
 </tr>
 <tr>
 <td>-opt_level</td>
@@ -122,16 +101,22 @@
 <td>NO</td>
 </tr>
 <tr>
+<td>-lso</td>
+<td>Library Search Order</td>
+<td>E_TX.lso</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
 <td>-keep_hierarchy</td>
 <td>Keep Hierarchy</td>
-<td>No</td>
+<td>NO</td>
 <td>NO</td>
 </tr>
 <tr>
 <td>-netlist_hierarchy</td>
 <td>Netlist Hierarchy</td>
-<td>As_Optimized</td>
-<td>As_Optimized</td>
+<td>as_optimized</td>
+<td>as_optimized</td>
 </tr>
 <tr>
 <td>-rtlview</td>
@@ -143,7 +128,7 @@
 <td>-glob_opt</td>
 <td>Global Optimization Goal</td>
 <td>AllClockNets</td>
-<td>AllClockNets</td>
+<td>ALLCLOCKNETS</td>
 </tr>
 <tr>
 <td>-read_cores</td>
@@ -208,7 +193,7 @@
 <tr>
 <td>-fsm_style</td>
 <td>&nbsp;</td>
-<td>LUT</td>
+<td>lut</td>
 <td>LUT</td>
 </tr>
 <tr>
@@ -262,7 +247,7 @@
 <tr>
 <td>-mult_style</td>
 <td>&nbsp;</td>
-<td>Auto</td>
+<td>auto</td>
 <td>AUTO</td>
 </tr>
 <tr>
@@ -322,7 +307,7 @@
 <tr>
 <td>-iob</td>
 <td>&nbsp;</td>
-<td>Auto</td>
+<td>auto</td>
 <td>AUTO</td>
 </tr>
 <tr>
@@ -352,28 +337,28 @@
 </tr>
 <tr>
 <td>CPU Architecture/Speed</td>
-<td>Intel(R) Core(TM)2 Duo CPU     T6400  @ 2.00GHz/1995 MHz</td>
+<td>Pentium(R) Dual-Core  CPU      E5300  @ 2.60GHz/1200.000 MHz</td>
 <td><font color=gray>&lt;&nbsp; data not available &nbsp;&gt;</font></td>
 <td><font color=gray>&lt;&nbsp; data not available &nbsp;&gt;</font></td>
 <td><font color=gray>&lt;&nbsp; data not available &nbsp;&gt;</font></td>
 </tr>
 <tr>
 <td>Host</td>
-<td>Thomes</td>
+<td>localhost.localdomain</td>
 <td><font color=gray>&lt;&nbsp; data not available &nbsp;&gt;</font></td>
 <td><font color=gray>&lt;&nbsp; data not available &nbsp;&gt;</font></td>
 <td><font color=gray>&lt;&nbsp; data not available &nbsp;&gt;</font></td>
 </tr>
 <tr>
 <td>OS Name</td>
-<td>Microsoft Windows Vista , 32-bit</td>
+<td>unknown</td>
 <td><font color=gray>&lt;&nbsp; data not available &nbsp;&gt;</font></td>
 <td><font color=gray>&lt;&nbsp; data not available &nbsp;&gt;</font></td>
 <td><font color=gray>&lt;&nbsp; data not available &nbsp;&gt;</font></td>
 </tr>
 <tr>
 <td>OS Release</td>
-<td>Service Pack 2  (build 6002)</td>
+<td>unknown</td>
 <td><font color=gray>&lt;&nbsp; data not available &nbsp;&gt;</font></td>
 <td><font color=gray>&lt;&nbsp; data not available &nbsp;&gt;</font></td>
 <td><font color=gray>&lt;&nbsp; data not available &nbsp;&gt;</font></td>

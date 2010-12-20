@@ -3,3 +3,7 @@ xst -intstyle ise -ifn "C:/Users/Thomes/Desktop/UART/UART VHDL/E_TX.xst" -ofn "C
 xst -intstyle ise -ifn "C:/Users/Thomes/Desktop/UART/UART VHDL/E_TX.xst" -ofn "C:/Users/Thomes/Desktop/UART/UART VHDL/E_TX.syr" 
 xst -intstyle ise -ifn "C:/Users/Thomes/Desktop/UART/UART VHDL/E_TX.xst" -ofn "C:/Users/Thomes/Desktop/UART/UART VHDL/E_TX.syr" 
 xst -intstyle ise -ifn "C:/Users/Thomes/Desktop/UART/UART VHDL/E_TX.xst" -ofn "C:/Users/Thomes/Desktop/UART/UART VHDL/E_TX.syr" 
+xst -intstyle ise -ifn "/home/g01a/UART_SHCD/src/E_TX.xst" -ofn "/home/g01a/UART_SHCD/src/E_TX.syr" 
+xst -intstyle ise -ifn "/home/g01a/UART_SHCD/src/E_TX.xst" -ofn "/home/g01a/UART_SHCD/src/E_TX.syr" 
+xst -intstyle ise -ifn "/home/g01a/UART_SHCD/src/E_TX.xst" -ofn "/home/g01a/UART_SHCD/src/E_TX.syr" 
+xst -intstyle ise -ifn "/home/g01a/UART_SHCD/src/E_TX.xst" -ofn "/home/g01a/UART_SHCD/src/E_TX.syr" 

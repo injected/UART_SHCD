@@ -96,7 +96,7 @@ component E_GENERATE_PARITYBIT
 Port(
 		E_GENERATE_PARITYBIT_Reset: 				 		IN  STD_LOGIC;
 		E_GENERATE_PARITYBIT_Clock_In:					IN  STD_LOGIC;		
-		E_GENERATE_PARITYBIT_Enable:						IN  STD_LOGIC;	
+		E_GENERATE_PARITYBIT_Start_Calc:						IN  STD_LOGIC;	
 		E_GENERATE_PARITYBIT_Data:							IN  STD_LOGIC_VECTOR(7 DOWNTO 0); -- 8 bit
 		E_GENERATE_PARITYBIT_Paritiy_Out:				OUT  STD_LOGIC;	
 		E_GENERATE_PARITYBIT_Busy:							OUT  STD_LOGIC	
@@ -110,7 +110,7 @@ Port(
 		E_BUFFER_Data_In:						IN  STD_LOGIC_VECTOR(7 DOWNTO 0); -- 8 bit		
 		E_BUFFER_Save:							IN  STD_LOGIC;
 		E_BUFFER_Save_Busy:					OUT  STD_LOGIC;		
-		E_BUFFER_Length:						OUT INTEGER;		
+		-- E_BUFFER_Length:						OUT INTEGER;		
 		E_BUFFER_Data_Out:					OUT  STD_LOGIC_VECTOR(7 DOWNTO 0); -- 8 bit		
 		E_BUFFER_Load:							IN  STD_LOGIC;		
 		E_BUFFER_Load_Busy:					OUT  STD_LOGIC		
@@ -138,7 +138,7 @@ PORT MAP
 (
 		E_GENERATE_PARITYBIT_Reset => S_TX_Reset,
 		E_GENERATE_PARITYBIT_Clock_In => S_TX_Clock_In,	
-		E_GENERATE_PARITYBIT_Enable => S_GENERATE_PARITYBIT_Enable,
+		E_GENERATE_PARITYBIT_Start_Calc => S_GENERATE_PARITYBIT_Enable,
 		E_GENERATE_PARITYBIT_Data => S_BUFFER_Data_Out,
 		E_GENERATE_PARITYBIT_Paritiy_Out => S_GENERATE_PARITYBIT_Paritiy_Out, 		
 		E_GENERATE_PARITYBIT_Busy => S_GENERATE_PARITYBIT_Busy
@@ -152,7 +152,8 @@ PORT MAP
 		E_BUFFER_Data_In => S_TX_Data,
 		E_BUFFER_Save => S_BUFFER_Save,
 		E_BUFFER_Save_Busy => S_BUFFER_Save_Busy,		
-		E_BUFFER_Length => S_BUFFER_Length,	
+		--E_BUFFER_Irq => S_BUFFER_Irqv -- TODO: implement!!
+		--E_BUFFER_Length => S_BUFFER_Length,	
 		E_BUFFER_Data_Out => S_BUFFER_Data_Out,		
 		E_BUFFER_Load => S_BUFFER_Load,
 		E_BUFFER_Load_Busy => S_BUFFER_Load_Busy			
