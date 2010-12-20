@@ -1,43 +1,38 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date:    14:38:49 11/13/2010 
--- Design Name: 
--- Module Name:    E_RECEIVCE - A_RECEIVE 
--- Project Name: 
--- Target Devices: 
--- Tool versions: 
--- Description: 
---
--- Dependencies: 
---
--- Revision: 
--- Revision 0.01 - File Created
--- Additional Comments: 
---
-----------------------------------------------------------------------------------
+-- Funktionsbeschreibung:
+
+-- Die E_Receive Entity hoert die RX-Datenleitung ab. Wenn ein Datenbyte anliegt wird das Busy-Flag
+-- bis zum naechsten Startbit auf Null gezogen. Waehrend dieser Zeit muss die die darueberliegende Entity
+-- den Datenwert ausgelesen haben. Die RX-Leitung wird pro Bit 5 mal abgetastet. Das Partiybit wird an die 
+-- hoehere Ebene weitergegeben.
+
+-- Pinbeschreibung
+
+	-- Eingaenge:
+		-- E_RECEIVE_Reset						Reset (active low)
+		-- E_RECEIVE_Clock_In					Takt
+		-- E_RECEIVE_Baudrate_5x				fuenffache Baudrate der Kommunikationsfrequenz
+		-- E_RECEIVE_Data_Serial_In:			Anschluss der RX-Leitung
+
+
+	-- Ausgaenge:
+		-- E_RECEIVE_Paritybit:					empfangenes Paritybit	
+		-- E_RECEIVE_Data_Parallel_Out:		Datenbyte das empfangen wurde
+		-- E_RECEIVE_Busy:						Busy-Flag bestimmt ob Daten anliegen (0 = valid)
+
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx primitives in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
 
 entity E_RECEIVE is
 Port (
 		E_RECEIVE_Reset: 				 		IN  STD_LOGIC;
 		E_RECEIVE_Clock_In:					IN  STD_LOGIC;		
-		E_RECEIVE_Baudrate_5x:  					IN  STD_LOGIC;	
+		E_RECEIVE_Baudrate_5x:  			IN  STD_LOGIC;	
 		E_RECEIVE_Paritybit:					OUT STD_LOGIC;	
-		E_RECEIVE_Data_Parallel_Out:			OUT  STD_LOGIC_VECTOR(7 DOWNTO 0); -- 8 bit
-		E_RECEIVE_Data_Serial_In:				IN  STD_LOGIC;
-		E_RECEIVE_Busy:							OUT  STD_LOGIC
+		E_RECEIVE_Data_Parallel_Out:		OUT  STD_LOGIC_VECTOR(7 DOWNTO 0); -- 8 bit
+		E_RECEIVE_Data_Serial_In:			IN  STD_LOGIC;
+		E_RECEIVE_Busy:						OUT  STD_LOGIC
 );
 end E_RECEIVE;
 
@@ -58,17 +53,17 @@ SIGNAL S_DECISION_Value1:			STD_LOGIC;
 SIGNAL S_DECISION_Value2:			STD_LOGIC;	
 SIGNAL S_DECISION_Value3:			STD_LOGIC;	
 SIGNAL S_DECISION_Result:			STD_LOGIC;	
-SIGNAL S_DECISION_Busy:				STD_LOGIC;	
+
+SIGNAL S_Save_Bit:					STD_LOGIC;
+SIGNAL S_Save_Ready:					STD_LOGIC;
+SIGNAL S_Enable_Receive:			STD_LOGIC;
 
 component E_DECISION
     Port ( 
-	 		E_DECISION_Reset: 				IN  STD_LOGIC;
-			E_DECISION_Clock_In:				IN  STD_LOGIC;		
-			E_DECISION_Value1 : IN  STD_LOGIC;
-         E_DECISION_Value2 : IN  STD_LOGIC;
-         E_DECISION_Value3 : IN  STD_LOGIC;
-         E_DECISION_Result : OUT  STD_LOGIC;
-			E_DECISION_Busy : OUT  STD_LOGIC
+			E_DECISION_Value1 : 				IN  STD_LOGIC;
+         E_DECISION_Value2 : 				IN  STD_LOGIC;
+         E_DECISION_Value3 : 				IN  STD_LOGIC;
+         E_DECISION_Result : 				OUT  STD_LOGIC
 			);
 end component;
 
@@ -76,17 +71,14 @@ begin
 
 C_DECISION: E_DECISION
     PORT MAP ( 
-	 		E_DECISION_Reset => S_RECEIVE_Reset,
-			E_DECISION_Clock_In => S_RECEIVE_Clock_In,
 			E_DECISION_Value1 => S_DECISION_Value1,
          E_DECISION_Value2 => S_DECISION_Value2,
          E_DECISION_Value3 => S_DECISION_Value3,
-         E_DECISION_Result  => S_DECISION_Result,
-			E_DECISION_Busy => S_DECISION_Busy
+         E_DECISION_Result  => S_DECISION_Result
 			);
 
 
-	P1 : process (
+	Save_Byte : process (
 		S_RECEIVE_Reset,
 		S_RECEIVE_Clock_In
 	)
@@ -95,139 +87,149 @@ C_DECISION: E_DECISION
 			IF(S_RECEIVE_Reset = '0')
 			THEN
 				S_RECEIVE_Data_Parallel_Out <= "00000000";
-				S_RECEIVE_Busy <= '0';	
+				S_RECEIVE_Busy <= '1';	
 				S_State <= "0000";	
 				S_RECEIVE_Paritybit <= '0';
-			--	Main Loop wird bei jedem Taktereignis aufgerufen		
-		   ELSIF (S_RECEIVE_Clock_In = '1' AND S_RECEIVE_Clock_In'EVENT)
+				S_Enable_Receive <= '0';
+			--	Main Loop wird bei jedem Taktereignis aufgerufen					
+			ELSIF (S_RECEIVE_Clock_In = '1' AND S_RECEIVE_Clock_In'EVENT)
 			THEN
 			
 				-- warten auf Startbit
-				IF (S_State = "0000" AND S_RECEIVE_Data_Serial_In = '0')
+				IF (S_State = "0000"  AND S_RECEIVE_Data_Serial_In = '0')
 				THEN
-					S_RECEIVE_Busy <= '1';	
+					S_RECEIVE_Busy <= '1';
+					S_Enable_Receive <= '1';
 					S_State <= "0001";
 				
-				-- Startbit
-				ELSIF (S_State = "0001" AND S_Counter = "100")
+				-- Wenn Datenbit eingelesen wurde
+				ELSIF (S_Save_Ready = '1')
 				THEN
-				S_State <= "0010";
+					
+					-- Startbit 
+					IF (S_State = "0001")
+					THEN
+						S_State <= "0010";
+						S_RECEIVE_Busy <= '1';
 				
-				-- Bit 0
-				ELSIF (S_State = "0010" AND S_Counter = "010")
-				THEN
-				S_RECEIVE_Data_Parallel_Out(0) <= S_RECEIVE_Data_Serial_In;
+					-- Bit 0
+					ELSIF (S_State = "0010")
+					THEN
+						S_State <= "0011";
+						S_RECEIVE_Data_Parallel_Out(0) <= S_Save_Bit;
+					
+					-- Bit 1
+					ELSIF (S_State = "0011")
+					THEN
+						S_State <= "0100";
+						S_RECEIVE_Data_Parallel_Out(1) <= S_Save_Bit;
 
-				ELSIF (S_State = "0010" AND S_Counter = "100")
-				THEN
-				S_State <= "0011";
-				
-				-- Bit 1
-				ELSIF (S_State = "0011" AND S_Counter = "010")
-				THEN
-				S_RECEIVE_Data_Parallel_Out(1) <= S_RECEIVE_Data_Serial_In;
+					-- Bit 2
+					ELSIF (S_State = "0100")
+					THEN
+						S_State <= "0101";
+						S_RECEIVE_Data_Parallel_Out(2) <= S_Save_Bit;
 
-				ELSIF (S_State = "0011" AND S_Counter = "100")
-				THEN
-				S_State <= "0100";
+					-- Bit 3
+					ELSIF (S_State = "0101")
+					THEN
+						S_State <= "0110";
+						S_RECEIVE_Data_Parallel_Out(3) <= S_Save_Bit;
 
-				-- Bit 2
-				ELSIF (S_State = "0100" AND S_Counter = "010")
-				THEN
-				S_RECEIVE_Data_Parallel_Out(2) <= S_RECEIVE_Data_Serial_In;
+					-- Bit 4
+					ELSIF (S_State = "0110")
+					THEN
+						S_State <= "0111";
+						S_RECEIVE_Data_Parallel_Out(4) <= S_Save_Bit;
 
-				ELSIF (S_State = "0100" AND S_Counter = "100")
-				THEN
-				S_State <= "0101";
+					-- Bit 5
+					ELSIF (S_State = "0111")
+					THEN
+						S_State <= "1000";
+						S_RECEIVE_Data_Parallel_Out(5) <= S_Save_Bit;	
 
-				-- Bit 3
-				ELSIF (S_State = "0101" AND S_Counter = "010")
-				THEN
-				S_RECEIVE_Data_Parallel_Out(3) <= S_RECEIVE_Data_Serial_In;
+					-- Bit 6
+					ELSIF (S_State = "1000")
+					THEN
+						S_State <= "1001";
+						S_RECEIVE_Data_Parallel_Out(6) <= S_Save_Bit;
 
-				ELSIF (S_State = "0101" AND S_Counter = "100")
-				THEN
-				S_State <= "0110";
+					-- Bit 7
+					ELSIF (S_State = "1001")
+					THEN
+						S_State <= "1010";
+						S_RECEIVE_Data_Parallel_Out(7) <= S_Save_Bit;
 
-				-- Bit 4
-				ELSIF (S_State = "0111" AND S_Counter = "010")
-				THEN
-				S_RECEIVE_Data_Parallel_Out(4) <= S_RECEIVE_Data_Serial_In;
+					-- Paritybit
+					ELSIF (S_State = "1010")
+					THEN
+						S_State <= "1011";
+						S_RECEIVE_Paritybit <= S_Save_Bit;
 
-				ELSIF (S_State = "0111" AND S_Counter = "100")
-				THEN
-				S_State <= "1000";
-
-				-- Bit 5
-				ELSIF (S_State = "1000" AND S_Counter = "010")
-				THEN
-				S_RECEIVE_Data_Parallel_Out(5) <= S_RECEIVE_Data_Serial_In;
-
-				ELSIF (S_State = "1000" AND S_Counter = "100")
-				THEN
-				S_State <= "1001";
-
-				-- Bit 6
-				ELSIF (S_State = "1001" AND S_Counter = "010")
-				THEN
-				S_RECEIVE_Data_Parallel_Out(6) <= S_RECEIVE_Data_Serial_In;
-
-				ELSIF (S_State = "1001" AND S_Counter = "100")
-				THEN
-				S_State <= "1010";
-
-				-- Bit 7
-				ELSIF (S_State = "1010" AND S_Counter = "010")
-				THEN
-				S_RECEIVE_Data_Parallel_Out(7) <= S_RECEIVE_Data_Serial_In;
-
-				ELSIF (S_State = "1010" AND S_Counter = "100")
-				THEN
-				S_State <= "1011";
-				
-				-- Paritybit
-				ELSIF (S_State = "1011" AND S_Counter = "010")
-				THEN
-				S_RECEIVE_Paritybit <= S_RECEIVE_Data_Serial_In;
-				ELSIF (S_State = "1011" AND S_Counter = "100")
-				THEN
-				S_State <= "1100";				
-
-				
-				-- Erstes Stoppbit, State-Machine reseten, Busy-Flag reseten	
-				ELSIF (S_State = "1100")
-				THEN
-				S_State <= "0000";	
-				S_RECEIVE_Busy <= '0';
-				
+					-- erstes Stoppbit
+					ELSIF (S_State = "1011")
+					THEN
+						S_State <= "0000";
+						S_Enable_Receive <= '0';
+						S_RECEIVE_Busy <= '0';
+					
+					ELSE
+						-- Nothing to do
+					END IF;
+					
+				ELSE
+					-- Nothing to do
 				END IF;
 			
 			END IF;
 	end process;
 	
 
-	P2 : process (
+	Receive_Bit : process 
+	(
 		S_RECEIVE_Reset,
-		S_RECEIVE_Baudrate_5x
+		S_RECEIVE_Baudrate_5x,
+		S_Enable_Receive
 	)
 	begin
 			-- Resetfall
-			IF((S_RECEIVE_Reset = '0') OR (S_State = "0001"))
+			IF((S_RECEIVE_Reset = '0') OR (S_Enable_Receive  = '0'))
 			THEN
 				S_Counter <= "000";
+				S_Save_Bit <= '0';
+				S_Save_Ready <= '0';
 			--	Main Loop wird bei jedem Taktereignis aufgerufen		
-		   ELSIF (S_RECEIVE_Baudrate_5x = '1' AND S_RECEIVE_Baudrate_5x'EVENT)
+		   ELSIF (S_RECEIVE_Baudrate_5x = '1' AND S_RECEIVE_Baudrate_5x'EVENT AND S_Enable_Receive = '1')
 			THEN
-				CASE S_Counter IS
-				WHEN "000" => S_Counter <= "001";
-				WHEN "001" => S_Counter <= "010";
-				WHEN "010" => S_Counter <= "011";
-				WHEN "011" => S_Counter <= "100";
-				WHEN "100" => S_Counter <= "000";				
-				WHEN OTHERS => S_Counter <= "000";
-				END CASE;
+				IF (S_Counter = "000")
+				THEN
+					S_Counter <= "001";
+					S_Save_Ready <= '0';
+				ELSIF (S_Counter = "001")
+				THEN
+					S_Counter <= "010";
+					S_DECISION_Value1 <= S_RECEIVE_Data_Serial_In;
+				ELSIF (S_Counter = "010")
+				THEN
+					S_Counter <= "011";
+					S_DECISION_Value2 <= S_RECEIVE_Data_Serial_In;
+				ELSIF (S_Counter = "011")
+				THEN
+					S_Counter <= "100";
+					S_DECISION_Value3 <= S_RECEIVE_Data_Serial_In;
+				ELSIF (S_Counter = "100")
+				THEN				
+					S_Counter <= "000";
+					S_Save_Bit <= S_DECISION_Result;
+					S_Save_Ready <= '1';
+				ELSE
+					S_Counter <= "000";
+				END IF;
+
 			END IF;
 	end process;
+	
+	
 	
 S_RECEIVE_Reset <= E_RECEIVE_Reset;
 S_RECEIVE_Clock_In <= E_RECEIVE_Clock_In;	

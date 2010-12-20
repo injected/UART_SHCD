@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2010-11-15T14:18:05</DateModified>
+  <DateModified>2010-12-19T11:15:37</DateModified>
   <ModuleName>E_TESTBENCH</ModuleName>
   <SummaryTimeStamp>2010-11-15T14:17:19</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/Thomes/Desktop/UART VHDL/iseconfig/E_RX.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Thomes/Desktop/UART VHDL</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/Thomes/Desktop/UART/UART VHDL/iseconfig/E_RX.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Thomes/Desktop/UART/UART VHDL\</ImplementationReportsDirectory>
   <DateInitialized>2010-11-15T14:18:04</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

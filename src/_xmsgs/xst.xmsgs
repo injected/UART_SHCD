@@ -5,5 +5,274 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="info" file="Xst" num="2679" delta="unknown" >Register &lt;<arg fmt="%s" index="1">S_Send_Event_Handshake</arg>&gt; in unit &lt;<arg fmt="%s" index="2">E_UART</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="1561" delta="unknown" >&quot;<arg fmt="%s" index="1">C:/Users/Scherr Thomas/Desktop/UART VHDL_20_12/UART VHDL/BAUD_GENERATOR.vhd</arg>&quot; line <arg fmt="%d" index="2">128</arg>: Mux is complete : default of case is discarded
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="unknown" >Register &lt;<arg fmt="%s" index="1">S_GENERATE_PARITYBIT_Busy</arg>&gt; in unit &lt;<arg fmt="%s" index="2">E_GENERATE_PARITYBIT</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="unknown" >Signal &lt;<arg fmt="%s" index="1">S_UART_Serial_Out</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="unknown" >Signal &lt;<arg fmt="%s" index="1">S_UART_Data_In</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="unknown" >Signal &lt;<arg fmt="%s" index="1">S_RX_irq</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="unknown" >Signal &lt;<arg fmt="%s" index="1">S_RX_Load</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="unknown" >Signal &lt;<arg fmt="%s" index="1">S_RX_Busy</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="unknown" >Signal &lt;<arg fmt="%s" index="1">S_BAUD_GENERATOR_Baudrate</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">E_CALC_CLOCK_DIVISOR_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">C_BAUD_GENERATOR</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">8 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;E_CALC_CLOCK_DIVISOR_3&gt; &lt;E_CALC_CLOCK_DIVISOR_4&gt; &lt;E_CALC_CLOCK_DIVISOR_5&gt; &lt;E_CALC_CLOCK_DIVISOR_7&gt; &lt;E_CALC_CLOCK_DIVISOR_8&gt; &lt;E_CALC_CLOCK_DIVISOR_9&gt; &lt;E_CALC_CLOCK_DIVISOR_10&gt; &lt;E_CALC_CLOCK_DIVISOR_11&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">E_CALC_CLOCK_DIVISOR_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">C_BAUD_GENERATOR</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;E_CALC_CLOCK_DIVISOR_2&gt; &lt;E_CALC_CLOCK_DIVISOR_6&gt; &lt;E_CALC_CLOCK_DIVISOR_12&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="unknown" >The value init of the FF/Latch <arg fmt="%s" index="1">E_CALC_CLOCK_DIVISOR_1</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">C_BAUD_GENERATOR</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">E_CALC_CLOCK_DIVISOR_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">C_BAUD_GENERATOR</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">FFd1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">FSM</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">S_RX_Load_Event</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">C_RX</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">S_RX_Load_Event_Handshake</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">C_RX</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="unknown" >The value init of the FF/Latch <arg fmt="%s" index="1">E_CLOCK_DIVISOR_14</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">E_BAUD_GENERATOR</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="unknown" >The value init of the FF/Latch <arg fmt="%s" index="1">E_CLOCK_DIVISOR_12</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">E_BAUD_GENERATOR</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="unknown" >The value init of the FF/Latch <arg fmt="%s" index="1">E_CLOCK_DIVISOR_8</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">E_BAUD_GENERATOR</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="unknown" >The value init of the FF/Latch <arg fmt="%s" index="1">E_CLOCK_DIVISOR_6</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">E_BAUD_GENERATOR</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="unknown" >The value init of the FF/Latch <arg fmt="%s" index="1">E_CLOCK_DIVISOR_5</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">E_BAUD_GENERATOR</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="unknown" >The value init of the FF/Latch <arg fmt="%s" index="1">E_CLOCK_DIVISOR_0</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">E_BAUD_GENERATOR</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="unknown" >The value init of the FF/Latch <arg fmt="%s" index="1">E_CALC_CLOCK_DIVISOR_12</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">E_BAUD_GENERATOR</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="unknown" >The value init of the FF/Latch <arg fmt="%s" index="1">E_CALC_CLOCK_DIVISOR_6</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">E_BAUD_GENERATOR</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="unknown" >The value init of the FF/Latch <arg fmt="%s" index="1">E_CALC_CLOCK_DIVISOR_2</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">E_BAUD_GENERATOR</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="unknown" >The value init of the FF/Latch <arg fmt="%s" index="1">E_CALC_CLOCK_DIVISOR_1</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">E_BAUD_GENERATOR</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">E_CALC_CLOCK_DIVISOR_11</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">E_BAUD_GENERATOR</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="unknown" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">E_CALC_CLOCK_DIVISOR_10</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">E_BAUD_GENERATOR</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="unknown" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">E_CALC_CLOCK_DIVISOR_9</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">E_BAUD_GENERATOR</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="unknown" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">E_CALC_CLOCK_DIVISOR_8</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">E_BAUD_GENERATOR</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="unknown" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">E_CALC_CLOCK_DIVISOR_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">E_BAUD_GENERATOR</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="unknown" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">E_CALC_CLOCK_DIVISOR_5</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">E_BAUD_GENERATOR</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="unknown" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">E_CALC_CLOCK_DIVISOR_4</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">E_BAUD_GENERATOR</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="unknown" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">E_CALC_CLOCK_DIVISOR_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">E_BAUD_GENERATOR</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="unknown" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">E_CALC_CLOCK_DIVISOR_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">E_BAUD_GENERATOR</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="unknown" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">E_CLOCK_DIVISOR_13</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">E_BAUD_GENERATOR</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="unknown" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">E_CLOCK_DIVISOR_11</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">E_BAUD_GENERATOR</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="unknown" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">E_CLOCK_DIVISOR_10</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">E_BAUD_GENERATOR</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="unknown" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">E_CLOCK_DIVISOR_9</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">E_BAUD_GENERATOR</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="unknown" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">E_CLOCK_DIVISOR_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">E_BAUD_GENERATOR</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="unknown" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">E_CLOCK_DIVISOR_4</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">E_BAUD_GENERATOR</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="unknown" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">E_CLOCK_DIVISOR_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">E_BAUD_GENERATOR</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="unknown" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">E_CLOCK_DIVISOR_2</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">E_BAUD_GENERATOR</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="unknown" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">E_CLOCK_DIVISOR_1</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">E_BAUD_GENERATOR</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">E_CLOCK_DIVISOR_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">E_BAUD_GENERATOR</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">9 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;E_CLOCK_DIVISOR_5&gt; &lt;E_CLOCK_DIVISOR_6&gt; &lt;E_CLOCK_DIVISOR_8&gt; &lt;E_CLOCK_DIVISOR_12&gt; &lt;E_CLOCK_DIVISOR_14&gt; &lt;E_CALC_CLOCK_DIVISOR_1&gt; &lt;E_CALC_CLOCK_DIVISOR_2&gt; &lt;E_CALC_CLOCK_DIVISOR_6&gt; &lt;E_CALC_CLOCK_DIVISOR_12&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">S_RX_Load_Event</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">E_RX</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="unknown" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">S_RX_Load_Old</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">E_RX</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">S_BUFFER_Save</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">E_RX</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">S_BUFFER_Load</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">E_RX</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">S_RX_Load_Event_Handshake</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">E_RX</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="unknown" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">S_RX_Busy</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">E_RX</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="unknown" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">S_RX_State_FSM_FFd1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">E_RX</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">C_BAUD_GENERATOR/E_Clock_Divisor_Counter1_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">E_UART</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">C_BAUD_GENERATOR/E_Clock_Divisor_Counter1_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">E_UART</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">C_BAUD_GENERATOR/E_Clock_Divisor_Counter1_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">E_UART</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">C_BAUD_GENERATOR/E_Clock_Divisor_Counter1_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">E_UART</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">C_BAUD_GENERATOR/E_Clock_Divisor_Counter1_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">E_UART</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">C_BAUD_GENERATOR/E_Clock_Divisor_Counter1_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">E_UART</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">C_BAUD_GENERATOR/E_Clock_Divisor_Counter1_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">E_UART</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">C_BAUD_GENERATOR/E_Clock_Divisor_Counter1_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">E_UART</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">C_BAUD_GENERATOR/E_Clock_Divisor_Counter1_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">E_UART</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">C_BAUD_GENERATOR/E_Clock_Divisor_Counter1_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">E_UART</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">C_BAUD_GENERATOR/E_Clock_Divisor_Counter1_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">E_UART</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">C_BAUD_GENERATOR/E_Clock_Divisor_Counter1_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">E_UART</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">C_BAUD_GENERATOR/E_Clock_Divisor_Counter1_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">E_UART</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">C_BAUD_GENERATOR/E_Clock_Divisor_Counter1_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">E_UART</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">C_BAUD_GENERATOR/E_Clock_Divisor_Counter1_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">E_UART</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">C_BAUD_GENERATOR/E_Clock_Divisor_Counter1_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">E_UART</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">C_BAUD_GENERATOR/E_Clock_Divisor_Counter1_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">E_UART</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">C_BAUD_GENERATOR/E_Clock_Divisor_Counter1_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">E_UART</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">C_BAUD_GENERATOR/E_Clock_Divisor_Counter1_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">E_UART</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">C_BAUD_GENERATOR/E_Clock_Divisor_Counter1_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">E_UART</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">C_BAUD_GENERATOR/E_Clock_Divisor_Counter1_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">E_UART</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">C_BAUD_GENERATOR/E_Clock_Divisor_Counter1_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">E_UART</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">C_BAUD_GENERATOR/E_Clock_Divisor_Counter1_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">E_UART</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">C_BAUD_GENERATOR/E_Clock_Divisor_Counter1_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">E_UART</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">C_BAUD_GENERATOR/E_Clock_Divisor_Counter1_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">E_UART</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">C_BAUD_GENERATOR/E_Clock_Divisor_Counter1_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">E_UART</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">C_BAUD_GENERATOR/E_Clock_Divisor_Counter1_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">E_UART</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">C_BAUD_GENERATOR/E_Clock_Divisor_Counter1_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">E_UART</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">C_BAUD_GENERATOR/E_Clock_Divisor_Counter1_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">E_UART</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">C_BAUD_GENERATOR/E_Clock_Divisor_Counter1_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">E_UART</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">C_BAUD_GENERATOR/E_Clock_Divisor_Counter1_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">E_UART</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">C_BAUD_GENERATOR/E_Clock_Divisor_Counter1_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">E_UART</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">C_BAUD_GENERATOR/E_Clock_Generator_Event_Flag</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">E_UART</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="unknown" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
 </messages>
 

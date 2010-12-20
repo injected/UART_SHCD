@@ -10,15 +10,17 @@
          <ClosedNode>/E_TESTBENCH - E_TESTBENCH_A C:|Users|Thomes|Desktop|UART VHDL|TESTBENCH.vhd</ClosedNode>
          <ClosedNode>/E_TESTBENCH - E_TESTBENCH_A C:|Users|Thomes|Desktop|UART VHDL|TESTBENCH.vhd/C_MAIN - E_MAIN - E_MAIN_A/C_UART - E_UART - A_UART/C_TX - E_TX - E_TX</ClosedNode>
          <ClosedNode>/E_TESTBENCH - E_TESTBENCH_A C:|Users|Thomes|Desktop|UART|UART VHDL|TESTBENCH.vhd/C_MAIN - E_MAIN - E_MAIN_A/C_UART - E_UART - A_UART/C_RX - E_RX - A_RX</ClosedNode>
+         <ClosedNode>/E_TESTBENCH - E_TESTBENCH_A C:|Users|Thomes|Desktop|UART|UART VHDL|TESTBENCH.vhd/C_MAIN - E_MAIN - E_MAIN_A/C_UART - E_UART - A_UART/C_RX - E_RX - A_RX/C_RECEIVE - E_RECEIVE - A_RECEIVE</ClosedNode>
+         <ClosedNode>/E_TESTBENCH - E_TESTBENCH_A C:|Users|Thomes|Desktop|UART|UART VHDL|TESTBENCH.vhd/C_MAIN - E_MAIN - E_MAIN_A/C_UART - E_UART - A_UART/C_TX - E_TX - E_TX</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>C_RECEIVE - E_RECEIVE - A_RECEIVE (C:/Users/Thomes/Desktop/UART/UART VHDL/RECEIVCE.vhd)</SelectedItem>
+         <SelectedItem>C_RX - E_RX - A_RX (C:/Users/Thomes/Desktop/UART/UART VHDL/RX.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000019e000000020000000000000000000000000000000064ffffffff0000008100000000000000020000019e0000000100000000000000000000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>C_RECEIVE - E_RECEIVE - A_RECEIVE (C:/Users/Thomes/Desktop/UART/UART VHDL/RECEIVCE.vhd)</CurrentItem>
+      <CurrentItem>C_RX - E_RX - A_RX (C:/Users/Thomes/Desktop/UART/UART VHDL/RX.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -30,7 +32,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001af000000010000000100000000000000000000000064ffffffff000000810000000000000001000001af0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000013f000000010000000100000000000000000000000064ffffffff0000008100000000000000010000013f0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem/>
    </ItemView>

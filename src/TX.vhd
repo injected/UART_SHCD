@@ -194,9 +194,9 @@ E_TX_Busy <= S_TX_Busy;
 			   IF(S_TX_Enable = '1' and S_TX_Enable_old = '0')
 				THEN
 					S_TX_Do_Save <= '1';
+				ELSE
+				  S_TX_Enable_old	<= S_TX_Enable;
 				END IF;
-				S_TX_Enable_old	<= S_TX_Enable;
-
 				
 			   -- Abspeichern des Datenbytes im Buffer
 				IF(S_TX_Do_Save = '1' and S_TX_Busy = '0')

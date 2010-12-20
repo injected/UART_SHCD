@@ -1,0 +1,42 @@
+Release 11.3 - xst L.57 (nt)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/Scherr Thomas/Desktop/ToDo und Dokumente/Practice_No_5_Win/Task4_Animation/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/Scherr Thomas/Desktop/ToDo und Dokumente/Practice_No_5_Win/Task4_Animation/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> 
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Scherr Thomas/Desktop/UART VHDL_20_12/UART VHDL/DECISION.vhd" in Library work.
+Architecture a_decision of Entity e_decision is up to date.
+Compiling vhdl file "C:/Users/Scherr Thomas/Desktop/UART VHDL_20_12/UART VHDL/RECEIVCE.vhd" in Library work.
+Architecture a_receive of Entity e_receive is up to date.
+Compiling vhdl file "C:/Users/Scherr Thomas/Desktop/UART VHDL_20_12/UART VHDL/GENERATE_PARITYBIT.vhd" in Library work.
+Architecture a_generate_paritybit of Entity e_generate_paritybit is up to date.
+Compiling vhdl file "C:/Users/Scherr Thomas/Desktop/UART VHDL_20_12/UART VHDL/BUFFER.vhd" in Library work.
+Architecture a_buffer of Entity e_buffer is up to date.
+Compiling vhdl file "C:/Users/Scherr Thomas/Desktop/UART VHDL_20_12/UART VHDL/RX.vhd" in Library work.
+Entity <e_rx> compiled.
+Entity <e_rx> (Architecture <a_rx>) compiled.
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.30 secs
+ 
+--> 
+
+Total memory usage is 160552 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

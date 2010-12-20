@@ -55,69 +55,67 @@ begin
 
 	P1 : process (
 		E_TRANSMITT_Clock_In,
-		E_TRANSMITT_Reset,
-		E_TRANSMITT_Enable
+		E_TRANSMITT_Reset
 	)
 	begin
+		-- flankenwechsel erkennen und state in 12 (startzustand) setzten
+		IF(E_TRANSMITT_Enable = '1' AND Last_Enable_Value = '0')
+			THEN
+			Current_State <= START_STATE;
+		END IF;
 		
-		IF(E_TRANSMITT_Reset = '0')
+		IF(E_TRANSMITT_Enable = '1') 
 			THEN
-			Serial_Out <= '1';
-			Current_State <= END_STATE;
-		ELSIF (E_TRANSMITT_Clock_In = '1' AND E_TRANSMITT_Clock_In'EVENT)
-			THEN
-			-- flankenwechsel erkennen und state in 12 (startzustand) setzten
-			IF(E_TRANSMITT_Enable = '1' AND Last_Enable_Value = '0')
-				THEN
-				Current_State <= START_STATE;
-			END IF;
-			
-			IF(E_TRANSMITT_Enable = '1') 
-				THEN
-					-- changed signal
-					IF (E_TRANSMITT_Baudrate = '1' AND Last_Baudrate_Value = '0')
-						THEN
-						Busy_Flag <= '1';
-						case Current_State is
-							-- start bit
-							when START_STATE => 
-								Serial_Out <= '0';
-								Current_State <= 0;
-							-- parity bit
-							when 8 => 
-								Serial_Out <= E_TRANSMITT_Paritybit;
-								Current_State <= 10;
-							-- stop bit
-							when 10 => 
-								-- first stop bit
-								Serial_Out <= '1';
-								IF(E_TRANSMITT_One_or_two_Stoppbits = '1')
-								THEN
-									Current_State <= 11;
-								ELSIF(E_TRANSMITT_One_or_two_Stoppbits = '0')
-								THEN
-									Current_State <= END_STATE;
-								END IF;
-							-- stop bit 2
-							when 11 =>
-								-- second stop bit
-								Serial_Out <= '1';
-								Current_State <= END_STATE;
-							-- final state (end zustand)
-							when END_STATE =>
-								Busy_Flag <= '0';
-							-- data
-							when others => 
-								Serial_Out <= E_TRANSMITT_Data(Current_State);
-								Current_State <= Current_State+1;
-						end case;
-						
-					END IF; -- baudratenwechsel
-					Last_Baudrate_Value  <= E_TRANSMITT_Baudrate;
-				END IF; -- reset + clock
-			END IF; -- enable
-			Last_Enable_Value <= E_TRANSMITT_Enable;
 
+			IF (E_TRANSMITT_Reset = '0')
+				THEN
+				Serial_Out <= '1';
+				Current_State <= END_STATE;
+			ELSIF (E_TRANSMITT_Clock_In = '1' AND E_TRANSMITT_Clock_In'EVENT)
+				THEN
+				-- changed signal
+				IF (E_TRANSMITT_Baudrate = '1' AND Last_Baudrate_Value = '0')
+					THEN
+					Busy_Flag <= '1';
+					case Current_State is
+						-- start bit
+						when START_STATE => 
+							Serial_Out <= '0';
+							Current_State <= 0;
+						-- parity bit
+						when 8 => 
+							Serial_Out <= E_TRANSMITT_Paritybit;
+							Current_State <= 10;
+						-- stop bit
+						when 10 => 
+							-- first stop bit
+							Serial_Out <= '1';
+							IF(E_TRANSMITT_One_or_two_Stoppbits = '1')
+							THEN
+								Current_State <= 11;
+							ELSIF(E_TRANSMITT_One_or_two_Stoppbits = '0')
+							THEN
+								Current_State <= END_STATE;
+							END IF;
+						-- stop bit 2
+						when 11 =>
+							-- second stop bit
+							Serial_Out <= '1';
+							Current_State <= END_STATE;
+						-- final state (end zustand)
+						when END_STATE =>
+							Busy_Flag <= '0';
+						-- data
+						when others => 
+							Serial_Out <= E_TRANSMITT_Data(Current_State);
+							Current_State <= Current_State+1;
+					end case;
+					
+				END IF; -- baudratenwechsel
+				Last_Baudrate_Value  <= E_TRANSMITT_Baudrate;
+			END IF; -- reset + clock
+		END IF; -- enable
+		Last_Enable_Value <= E_TRANSMITT_Enable;
 	end process;
 
 
