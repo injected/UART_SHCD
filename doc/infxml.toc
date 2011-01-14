@@ -1,0 +1,71 @@
+\select@language {ngerman}
+\contentsline {section}{Inhaltsverzeichnis}{5}{section*.2}
+\select@language {english}
+\select@language {ngerman}
+\contentsline {section}{\numberline {1}Einleitung}{7}{section.1}
+\contentsline {subsection}{\numberline {1.1}Motivation und Zielsetzung}{7}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Arbeitsverteilung}{7}{subsection.1.2}
+\contentsline {section}{\numberline {2}Semantik Web Grundlagen}{8}{section.2}
+\contentsline {subsection}{\numberline {2.1}Einf\IeC {\"u}hrung: Semantic Web und Linked Data}{8}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Triples}{9}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}RDF}{10}{subsection.2.3}
+\contentsline {subparagraph}{RDF Syntax}{11}{section*.9}
+\contentsline {subparagraph}{RDF Schema}{14}{section*.10}
+\contentsline {subsection}{\numberline {2.4}OWL}{14}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}SPARQL}{14}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}Projekte}{15}{subsection.2.6}
+\contentsline {subsubsection}{\numberline {2.6.1}Suchen}{15}{subsubsection.2.6.1}
+\contentsline {paragraph}{Watson}{15}{section*.11}
+\contentsline {paragraph}{Sindice}{16}{section*.12}
+\contentsline {subsubsection}{\numberline {2.6.2}Datahubs}{16}{subsubsection.2.6.2}
+\contentsline {paragraph}{DBpedia}{16}{section*.13}
+\contentsline {paragraph}{Freebase}{16}{section*.14}
+\contentsline {section}{\numberline {3}Projektidee und Analyse}{17}{section.3}
+\contentsline {subsection}{\numberline {3.1}Hintergrund: Praxisphase eines Bachelor Studenten Angewandte Informatik}{17}{subsection.3.1}
+\contentsline {subparagraph}{Schwerpunkte}{17}{section*.15}
+\contentsline {subparagraph}{Firmenbewertungen}{17}{section*.16}
+\contentsline {subparagraph}{Professoren}{17}{section*.17}
+\contentsline {subsection}{\numberline {3.2}Idee: Automatische Empfehlung einer Firma}{17}{subsection.3.2}
+\contentsline {subparagraph}{Grundidee}{17}{section*.18}
+\contentsline {subsection}{\numberline {3.3}Analyse: Datenformate und Vorgehensweise}{18}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}Warum Ontologien/Linked Data/Semantic Web nutzen?}{18}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}Open Linked-Data an der HS Weingarten}{18}{subsubsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.3}Datenquellen}{19}{subsubsection.3.3.3}
+\contentsline {subparagraph}{LSF}{19}{section*.20}
+\contentsline {subparagraph}{Fimen Datenbank}{19}{section*.21}
+\contentsline {subparagraph}{INKIDU}{20}{section*.22}
+\contentsline {subsubsection}{\numberline {3.3.4}Algorithmen}{20}{subsubsection.3.3.4}
+\contentsline {paragraph}{Firmenzuordnung}{20}{section*.23}
+\contentsline {paragraph}{Bayesian average}{21}{section*.24}
+\contentsline {subsection}{\numberline {3.4}Datenmodellierung im Projekt}{21}{subsection.3.4}
+\contentsline {subsubsection}{\numberline {3.4.1}Ontologien}{21}{subsubsection.3.4.1}
+\contentsline {subparagraph}{DC}{21}{section*.25}
+\contentsline {subparagraph}{FOAF}{21}{section*.26}
+\contentsline {subparagraph}{AIISO}{22}{section*.27}
+\contentsline {subparagraph}{SKOS}{22}{section*.28}
+\contentsline {subparagraph}{Eigene Definition}{22}{figure.caption.30}
+\contentsline {subsubsection}{\numberline {3.4.2}Daten ver\IeC {\"o}ffentlichen}{24}{subsubsection.3.4.2}
+\contentsline {subsection}{\numberline {3.5}Klassifizierung der Firmen und Professoren}{24}{subsection.3.5}
+\contentsline {section}{\numberline {4}Umsetzung}{26}{section.4}
+\contentsline {subsection}{\numberline {4.1}Architektur \IeC {\"U}bersicht}{26}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Daten aufbereiten: Python Skripte}{26}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}RDFLib}{26}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}Arbeitsweise}{27}{subsubsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.3}Verkn\IeC {\"u}pfen der Datenquellen}{27}{subsubsection.4.2.3}
+\contentsline {subsection}{\numberline {4.3}Daten verf\IeC {\"u}gbar machen: Jena und Joseki}{28}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}Joseki Server}{29}{subsubsection.4.3.1}
+\contentsline {subsection}{\numberline {4.4}Die Anwendung: Semantic Internship Advisor}{29}{subsection.4.4}
+\contentsline {subparagraph}{Abfragen}{29}{section*.34}
+\contentsline {subparagraph}{Zuordnung}{30}{section*.35}
+\contentsline {subsubsection}{\numberline {4.4.1}Semantische Benutzeroberfl\IeC {\"a}chen}{30}{subsubsection.4.4.1}
+\contentsline {subsubsection}{\numberline {4.4.2}M\IeC {\"o}gliche Erweiterungen}{31}{subsubsection.4.4.2}
+\contentsline {subparagraph}{Maps}{31}{section*.37}
+\contentsline {subparagraph}{Weitere Firmeninformationen}{31}{section*.38}
+\contentsline {section}{\numberline {5}Zusammenfassung}{33}{section.5}
+\contentsline {subsection}{\numberline {5.1}Fazit}{33}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Ausblick}{33}{subsection.5.2}
+\contentsline {chapter}{Abbildungsverzeichnis}{35}{section*.40}
+\contentsline {chapter}{Tabellenverzeichnis}{35}{section*.41}
+\contentsline {section}{Listings}{35}{section*.42}
+\contentsline {section}{Literatur}{36}{section*.43}
+\contentsline {section}{Weblinks}{37}{section*.44}

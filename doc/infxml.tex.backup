@@ -1,0 +1,229 @@
+%\documentclass[a4paper,12pt,ngerman,fleqn,bibtotoc]{article}
+\documentclass[liststotoc,bibtotoc,fontsize=11pt,paper=a4,titlepage,twoside,DIV=10]{scrreprt}
+
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+
+% Farbumgebung fuer Latex und Textboxen
+\usepackage[usenames]{color}
+
+\usepackage{typearea}
+
+\usepackage{texdraw}
+\usepackage{graphicx}
+\usepackage{fancyhdr} % Seitengestaltung - Header / Body mit Überschriften
+\usepackage{fancyvrb} % Nummerierung von verbatim
+
+\usepackage{supertabular}
+\usepackage{longtable}
+\usepackage[right]{eurosym}
+\usepackage{a4wide}
+\usepackage{graphicx}
+\usepackage{picins}
+\usepackage{array}
+\usepackage{ae} % Schöne Schriften für PDF-Dateien
+\usepackage{lmodern} % Latin Modern
+
+
+\usepackage{listings}
+  %\lstset{numbers=left, numberstyle=\tiny, numbersep=5pt}
+  %\lstset{language=bash}
+  \lstset{
+	basicstyle=\ttfamily\fontsize{7.5pt}{8pt}\selectfont,
+	language=bash,			% choose the language of the code
+	numbers=left,			% where to put the line-numbers
+	numberstyle=\tiny,		% the size of the fonts that are used for the line-numbers
+	stepnumber=2,			% the step between two line-numbers. If it's 1 each line will be numbered
+	emptylines=*1,			% If there is a block of more than number (*) empty lines, only number (1) ones are printed.
+	breaklines=true,                % sets automatic line breaking
+	breakatwhitespace=false,        % sets if automatic breaks should only happen at whitespace
+	showspaces=false,               % show spaces adding particular underscores
+	showstringspaces=false,         % underline spaces within strings
+	showtabs=false,                 % show tabs within strings adding particular underscores
+	frame=none,			% adds a frame around the code
+	columns=fixed,			% The (alignment) can be fixed, flexible, spaceflexible or fullflexible
+	escapechar={§},			% If not empty the character escapes to LATEX
+	extendedchars=true,		% allows or prohibits extended characters in listings, that means (national) characters of codes 128–255.
+	commentstyle=\it\color{gray},
+	%directivestyle=\color{green},
+	stringstyle=\color{red},
+	backgroundcolor=\color{lightgray},
+	keywordstyle=\bf\color{black},
+	captionpos=b,                   % sets the caption-position to bottom
+%	aboveskip=10pt			define the space above the listing
+%	belowskip=10pt			define the space below the listing
+	lineskip=2pt			% additional space between lines in listing
+  }
+
+\lstdefinelanguage{conf} {
+   basicstyle=\ttfamily\fontsize{9pt}{10pt}\selectfont\color{black},
+   sensitive=true,
+   escapechar={§},
+%    escapeinside={(*@}{@*)},
+%    morecomment=[s][\color{red}\ttfamily]{<--}{-->}, commentstyle=\color{red},
+%    showstringspaces=false,
+%    numberstyle=\scriptsize,
+%    numberblanklines=true,
+%    showspaces=false,
+   breaklines=true,
+   stepnumber=2,			% the step between two line-numbers. If it's 1 each line will be numbered
+%    showtabs=false,
+  backgroundcolor=\color{lightgray}
+}
+
+\lstdefinelanguage{data} {
+   basicstyle=\ttfamily\fontsize{9pt}{10pt}\selectfont\color{black},
+   sensitive=true,
+   escapechar={§},
+numbers=none,
+%    escapeinside={(*@}{@*)},
+%    morecomment=[s][\color{red}\ttfamily]{<--}{-->}, commentstyle=\color{red},
+%    showstringspaces=false,
+%    numberstyle=\scriptsize,
+%    numberblanklines=true,
+%    showspaces=false,
+   breaklines=true,
+   stepnumber=2,			% the step between two line-numbers. If it's 1 each line will be numbered
+%    showtabs=false,
+  backgroundcolor=,
+%  belowskip=0pt
+}
+
+\usepackage[font=small,format=plain,labelfont=bf,up,textfont=it,up]{caption} % Bildunterschriften formatieren
+
+\usepackage{empheq}
+
+%Fixme Notizen anbringen
+\usepackage[
+inline, %Setzt Notiz direkt in den Text
+%margin, %Setzt Notiz an den Rand (default)
+%marginclue %Setzt nur einen Hinweis an den Rand
+]{fixme} 
+
+% ToDo Notes
+\usepackage[]{todonotes}
+% examples:
+% \missingfigure{hier fehlt n Bild}
+% \todo[inline]{blah}
+
+\usepackage{paralist} % itemize Listing erweitern sodass Aufzaehlungszeichen geaendert werden koennen
+% Beispiel:
+%\begin{itemize}
+%\item[$\filledtriangleright$] blah
+%\item[$\filleddiamond$] blubb
+%\item[$\smalltriangleright$] fasel
+%\end{itemize}
+
+\usepackage{MnSymbol} % Mathematische Symbole includen
+
+\usepackage{colortbl}	% Farben fuer Tabellen
+
+%\parindent0mm % Legt die Einr�ckTiefe der ersten Zeile f�r alle folgenden Abs�tze fest
+
+
+
+% Glossar Package einbinden
+%\usepackage{glossaries}
+\usepackage[
+nonumberlist, %keine Seitenzahlen anzeigen
+acronym=false,      %ein Abk�rzungsverzeichnis erstellen
+toc,          %Eintr�ge im Inhaltsverzeichnis
+section]      %im Inhaltsverzeichnis auf section-Ebene erscheinen
+{glossaries}
+
+
+%\usepackage{breakurl}
+\usepackage[      % Links in PDF Dokumenten - MUSS immer als letztes eingebunden werden !!!
+colorlinks=true,
+linkcolor=blue,
+bookmarks=true,
+pdffitwindow=true,
+plainpages=false,
+%linktocpage=true,	%Links im Inhaltsverzeichnis Table of Contents
+%frenchlinks=false,
+breaklinks=true]
+{hyperref}
+
+% Farbumgebung fuer Latex und Textboxen
+\definecolor{green}{rgb}{0.0,0.7,0.0}
+\definecolor{black}{rgb}{0.0,0.0,0.0}
+\definecolor{blue}{rgb}{0.0,0.0,0.75}
+\definecolor{gray}{rgb}{0.30,0.30,0.30}
+%\definecolor{lightgray}{rgb}{0.91,0.91,0.91}
+\definecolor{ulgray}{rgb}{0.95,0.95,0.95}
+\definecolor{red}{rgb}{1.0,0.0,0.0}
+\definecolor{brown}{rgb}{0.5,0.0,0.0}
+\definecolor{lightblue}{rgb}{0.6,0.75,0.95}
+\definecolor{lightgreen}{rgb}{0.6,0.95,0.65}
+\definecolor{lightred}{rgb}{0.95,0.75,0.6}
+\definecolor{cstred}{rgb}{0.94,0.5,0.5}
+\definecolor{lightyellow}{rgb}{0.95,0.95,0.6}
+\definecolor{lightmagenta}{rgb}{0.95,0.6,0.95}
+
+\makeatletter
+\def\url@leostyle{%
+  \@ifundefined{selectfont}{\def\UrlFont{\sf}}{\def\UrlFont{\footnotesize\ttfamily}}}
+\makeatother
+\urlstyle{leo}
+
+\makeatletter
+\lst@AddToHook{TextStyle}{\let\lst@basicstyle\ttfamily\small}
+\makeatother
+
+\pdfadjustspacing=1
+
+
+% Kopfzeile erstellen, Seitennummerierung
+%\pagestyle{headings}
+\pagestyle{fancy}
+\lhead[\fancyplain{}{\sffamily{}}]%
+      {\fancyplain{}{\sffamily \small{\leftmark}}}
+\rhead[\fancyplain{}{\sffamily \small{\rightmark}}]%
+      {\fancyplain{}{\sffamily{}}}
+\lfoot[\fancyplain{}{\thepage}]%
+      {\fancyplain{}{}}
+\rfoot[\fancyplain{}{}]%
+      {\fancyplain{}{\thepage}}
+\cfoot{}
+
+
+\begin{document}
+%\frontmatter
+\pagestyle{plain}
+%\frontmatter
+  \include{titelblatt} \newpage
+  \include{abstract} \newpage
+  %\include{intro/danksagungen} \newpage
+  %\include{intro/vorwort} \newpage
+
+\pagestyle{fancy}
+
+% Inhaltsverzeichnis
+\tableofcontents
+
+% Fügt manuell einen Verzeichniseintrag in das Inhaltsverzeichnis das Verzeichnis der Abbildungen oder das Verzeichnis der Tabellen ein;  der Eintrag wird automatisch mit der zugehörigen Seitennummer versehen. Solche manuellen Einträge sind besonders dann erforderlich,  wenn man einen Gliederungsbefehl verwendet, der einen solchen Eintrag nicht automatisch erzeugt
+\addcontentsline{toc}{chapter}{Inhaltsverzeichnis}
+
+%\mainmatter
+\pagestyle{fancy}
+
+\part{Einführung}
+%\include{DA04-Einfuehrung_LDAP} \newpage
+\include{einleitung} \newpage
+
+\part{OpenLDAP}
+%\label{sec:openldap}
+%\include{DA05-OpenLDAP} \newpage
+
+\part{Analyse der bestehenden LDAP Implementation an der Hochschule}
+%\label{sec:analyse_hs}
+%\include{analyse_hs/analyse}
+
+\part{Anhang}
+\listoffigures
+\lstlistoflistings
+\listoftables
+\include{literatur}
+\end{document}  
+
+\end{document} 

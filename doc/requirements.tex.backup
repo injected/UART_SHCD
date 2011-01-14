@@ -1,0 +1,41 @@
+\documentclass[a4paper,10pt]{report}
+\usepackage[utf8x]{inputenc}
+
+% Title Page
+\title{}
+\author{}
+
+
+\begin{document}
+\maketitle
+
+\section*{Revsion History}
+
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|l|l|l|l|}
+\hline \textbf{Name} & \textbf{Date} & \textbf{Reason of Change} & \textbf{Version}\\ 
+\hline Stähle, Merkle & 14.01.2011 & Initial Start & 0.01\\ 
+\hline 
+\end{tabular}
+
+%\caption{Arbeitsverteilung der Projektteilnehmer}
+\end{table}
+
+\chapter{Introduction}
+\section{Purpose}
+\section{Project Scope}
+\chapter{Overall Description}
+\section{Product Perspective}
+\section{Product Features}
+\section{Operating Environment}
+\chapter{System Features}
+\section{}
+
+\chapter{References}
+
+
+
+
+\end{document}          

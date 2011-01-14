@@ -1,0 +1,3 @@
+http://opensdlc.org/support-files/SDLC-RUP-Hardware-Requirements-Specification.pdf
+http://www.snoblen.org/charger/EVchargerHRS0100.pdf
+http://openscb.org/node/14
