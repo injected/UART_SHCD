@@ -1,0 +1,44 @@
+\BOOKMARK [1][-]{section*.2}{Inhaltsverzeichnis}{}
+\BOOKMARK [1][-]{section.1}{Einleitung}{}
+\BOOKMARK [2][-]{subsection.1.1}{Motivation und Zielsetzung}{section.1}
+\BOOKMARK [2][-]{subsection.1.2}{Arbeitsverteilung}{section.1}
+\BOOKMARK [1][-]{section.2}{Semantik Web Grundlagen}{}
+\BOOKMARK [2][-]{subsection.2.1}{Einf\374hrung: Semantic Web und Linked Data}{section.2}
+\BOOKMARK [2][-]{subsection.2.2}{Triples}{section.2}
+\BOOKMARK [2][-]{subsection.2.3}{RDF}{section.2}
+\BOOKMARK [2][-]{subsection.2.4}{OWL}{section.2}
+\BOOKMARK [2][-]{subsection.2.5}{SPARQL}{section.2}
+\BOOKMARK [2][-]{subsection.2.6}{Projekte}{section.2}
+\BOOKMARK [3][-]{subsubsection.2.6.1}{Suchen}{subsection.2.6}
+\BOOKMARK [3][-]{subsubsection.2.6.2}{Datahubs}{subsection.2.6}
+\BOOKMARK [1][-]{section.3}{Projektidee und Analyse}{}
+\BOOKMARK [2][-]{subsection.3.1}{Hintergrund: Praxisphase eines Bachelor Studenten Angewandte Informatik}{section.3}
+\BOOKMARK [2][-]{subsection.3.2}{Idee: Automatische Empfehlung einer Firma}{section.3}
+\BOOKMARK [2][-]{subsection.3.3}{Analyse: Datenformate und Vorgehensweise}{section.3}
+\BOOKMARK [3][-]{subsubsection.3.3.1}{Warum Ontologien/Linked Data/Semantic Web nutzen?}{subsection.3.3}
+\BOOKMARK [3][-]{subsubsection.3.3.2}{Open Linked-Data an der HS Weingarten}{subsection.3.3}
+\BOOKMARK [3][-]{subsubsection.3.3.3}{Datenquellen}{subsection.3.3}
+\BOOKMARK [3][-]{subsubsection.3.3.4}{Algorithmen}{subsection.3.3}
+\BOOKMARK [2][-]{subsection.3.4}{Datenmodellierung im Projekt}{section.3}
+\BOOKMARK [3][-]{subsubsection.3.4.1}{Ontologien}{subsection.3.4}
+\BOOKMARK [3][-]{subsubsection.3.4.2}{Daten ver\366ffentlichen}{subsection.3.4}
+\BOOKMARK [2][-]{subsection.3.5}{Klassifizierung der Firmen und Professoren}{section.3}
+\BOOKMARK [1][-]{section.4}{Umsetzung}{}
+\BOOKMARK [2][-]{subsection.4.1}{Architektur \334bersicht}{section.4}
+\BOOKMARK [2][-]{subsection.4.2}{Daten aufbereiten: Python Skripte}{section.4}
+\BOOKMARK [3][-]{subsubsection.4.2.1}{RDFLib}{subsection.4.2}
+\BOOKMARK [3][-]{subsubsection.4.2.2}{Arbeitsweise}{subsection.4.2}
+\BOOKMARK [3][-]{subsubsection.4.2.3}{Verkn\374pfen der Datenquellen}{subsection.4.2}
+\BOOKMARK [2][-]{subsection.4.3}{Daten verf\374gbar machen: Jena und Joseki}{section.4}
+\BOOKMARK [3][-]{subsubsection.4.3.1}{Joseki Server}{subsection.4.3}
+\BOOKMARK [2][-]{subsection.4.4}{Die Anwendung: Semantic Internship Advisor}{section.4}
+\BOOKMARK [3][-]{subsubsection.4.4.1}{Semantische Benutzeroberfl\344chen}{subsection.4.4}
+\BOOKMARK [3][-]{subsubsection.4.4.2}{M\366gliche Erweiterungen}{subsection.4.4}
+\BOOKMARK [1][-]{section.5}{Zusammenfassung}{}
+\BOOKMARK [2][-]{subsection.5.1}{Fazit}{section.5}
+\BOOKMARK [2][-]{subsection.5.2}{Ausblick}{section.5}
+\BOOKMARK [0][-]{section*.40}{Abbildungsverzeichnis}{}
+\BOOKMARK [0][-]{section*.41}{Tabellenverzeichnis}{}
+\BOOKMARK [1][-]{section*.42}{Listings}{section*.41}
+\BOOKMARK [1][-]{section*.43}{Literatur}{section*.41}
+\BOOKMARK [1][-]{section*.44}{Weblinks}{section*.41}
