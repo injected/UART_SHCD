@@ -1,4 +1,0 @@
-vhdl work "TRANSMITT.vhd"
-vhdl work "GENERATE_PARITYBIT.vhd"
-vhdl work "BUFFER.vhd"
-vhdl work "TX.vhd"

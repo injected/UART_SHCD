@@ -1,6 +1,0 @@
-set -tmpdir "C:/Users/Scherr Thomas/Desktop/ToDo und Dokumente/Practice_No_5_Win/Task4_Animation/xst/projnav.tmp"
-set -xsthdpdir "C:/Users/Scherr Thomas/Desktop/ToDo und Dokumente/Practice_No_5_Win/Task4_Animation/xst"
-elaborate
--lso UART.lso
--ifn UART.prj
--ifmt mixed

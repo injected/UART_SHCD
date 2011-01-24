@@ -1,7 +1,0 @@
-vhdl work "DECISION.vhd"
-vhdl work "RECEIVCE.vhd"
-vhdl work "GENERATE_PARITYBIT.vhd"
-vhdl work "BUFFER.vhd"
-vhdl work "RX.vhd"
-vhdl work "BAUD_GENERATOR.vhd"
-vhdl work "UART.vhd"

@@ -1,5 +1,0 @@
-set -tmpdir "C:/Users/Thomes/Desktop/UART/UART VHDL/xst/projnav.tmp"
-set -xsthdpdir "C:/Users/Thomes/Desktop/UART/UART VHDL/xst"
-elaborate
--ifn E_TESTBENCH.prj
--ifmt mixed
