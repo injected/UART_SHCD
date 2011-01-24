@@ -1,0 +1,24 @@
+\begin{thebibliography}{wasweissich}
+
+	\bibitem[Bern01]{Bern01} Tim Berners-Lee, James Hendler, Ora Lassila \flqq {\sl The Semantic Web: a new form of Web content that is meaningful to computers will unleash a revolution of new possibilities. In: Scientific American, 284 (5), S. 34–43, May 2001}\frqq
+	\url{http://www.scientificamerican.com/article.cfm?id=the-semantic-web}
+
+
+\bibitem[Sega09]{Sega09} Toby Segaran, Colin Evans, and Jamie Taylor \flqq {\sl Programming the Semantic Web}\frqq
+
+\bibitem[Ertel08]{Ertel08} Wolfgang Ertel \flqq {\sl Grundkurs Künstliche Intelligenz } \frqq \url{http://www.hs-weingarten.de/~ertel/kibuch}
+
+\bibitem[XML03]{XML03} H. Wittenbrink, W. Köhler, O. Bergmann et al. \flqq {\sl XML. SPC TEIA Lehrbuch Verlag, Berlin, 2003. ISBN 3-935539-69-X}\frqq
+
+
+\bibitem[Aufr08]{Aufr08} Michael Aufreiter \flqq {\sl Informationsvisualisierung und Navigation im Semantic Web: Eine Analyse bestehender Visualisierungstechniken im Hinblick auf Eignung für das Semantic Web} \frqq \url{http://quasipartikel.at/wp-content/uploads/2009/05/informationsvisualisierung_im_semantic-web1.pdf}
+
+
+\end{thebibliography}
+
+%\cite{dadada}
+% -> [test]
+
+%\cite{test1}
+% -> [1]
+
